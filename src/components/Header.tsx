@@ -13,6 +13,8 @@ const navLinks = [
   { href: '/products', label: 'Products' },
   { href: '/services', label: 'Services' },
   { href: '/virtual-try-on', label: 'Virtual Try-On' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export default function Header() {
