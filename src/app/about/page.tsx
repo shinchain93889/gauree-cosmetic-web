@@ -10,6 +10,7 @@ export default function AboutPage() {
     const teamMember1 = PlaceHolderImages.find(p => p.id === 'testimonial2');
     const teamMember2 = PlaceHolderImages.find(p => p.id === 'testimonial3');
     const teamMember3 = PlaceHolderImages.find(p => p.id === 'testimonial1');
+    const makeupFlatlay = PlaceHolderImages.find(p => p.id === 'hero');
 
   return (
     <div className="bg-background text-foreground">
@@ -50,13 +51,13 @@ export default function AboutPage() {
                       </p>
                   </div>
                   <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
-                    {teamMember1 && (
+                    {makeupFlatlay && (
                          <Image 
-                            src={PlaceHolderImages.find(p => p.id === 'makeup flatlay')?.imageUrl || ''}
+                            src={makeupFlatlay.imageUrl}
                             alt="Makeup flatlay"
                             fill
                             className="object-cover"
-                            data-ai-hint="makeup collection"
+                            data-ai-hint={makeupFlatlay.imageHint}
                          />
                     )}
                   </div>
