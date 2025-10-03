@@ -1,3 +1,106 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Elegant flat lay of various makeup products on a marble background.",
+      "imageUrl": "https://images.unsplash.com/photo-1555178394-10d2de2f8ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYWtldXAlMjBmbGF0bGF5fGVufDB8fHx8MTc1OTQ2NTMyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "makeup flatlay"
+    },
+    {
+      "id": "product1",
+      "description": "A luxurious lipstick tube.",
+      "imageUrl": "https://images.unsplash.com/photo-1706821722700-842cb7329a08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsaXBzdGljayUyMHByb2R1Y3R8ZW58MHx8fHwxNzU5NDY1MzI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lipstick product"
+    },
+    {
+      "id": "product2",
+      "description": "An elegant eyeshadow palette.",
+      "imageUrl": "https://images.unsplash.com/photo-1581273154768-0a9a16887d2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxleWVzaGFkb3clMjBwYWxldHRlfGVufDB8fHx8MTc1OTM5NjAxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "eyeshadow palette"
+    },
+    {
+      "id": "product3",
+      "description": "A bottle of foundation.",
+      "imageUrl": "https://images.unsplash.com/photo-1566733015703-b89a6389ff18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Zm91bmRhdGlvbiUyMGJvdHRsZXxlbnwwfHx8fDE3NTkzOTYwMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "foundation bottle"
+    },
+    {
+      "id": "product4",
+      "description": "A glowing highlighter compact.",
+      "imageUrl": "https://images.unsplash.com/photo-1635766054428-2098ee1ea8ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoaWdobGlnaHRlciUyMGNvbXBhY3R8ZW58MHx8fHwxNzU5NDY1MzI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "highlighter compact"
+    },
+    {
+      "id": "product5",
+      "description": "A mascara wand and tube.",
+      "imageUrl": "https://images.unsplash.com/photo-1650793450119-3d608d0a9532?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFzY2FyYSUyMHByb2R1Y3R8ZW58MHx8fHwxNzU5NDY1MzI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mascara product"
+    },
+    {
+      "id": "service1",
+      "description": "A bride getting her makeup done.",
+      "imageUrl": "https://images.unsplash.com/photo-1600685890506-593fdf55949b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YnJpZGFsJTIwbWFrZXVwfGVufDB8fHx8MTc1OTQ2NTMyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bridal makeup"
+    },
+    {
+      "id": "service2",
+      "description": "A model with glamorous evening makeup.",
+      "imageUrl": "https://images.unsplash.com/photo-1631120581590-a699a481fc98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbGFtb3VyJTIwbWFrZXVwfGVufDB8fHx8MTc1OTQ2NTMyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "glamour makeup"
+    },
+    {
+      "id": "service3",
+      "description": "A group of friends learning makeup application.",
+      "imageUrl": "https://images.unsplash.com/photo-1645017324547-0ae2822147b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYWtldXAlMjBsZXNzb258ZW58MHx8fHwxNzU5NDY1MzI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "makeup lesson"
+    },
+    {
+      "id": "look_natural",
+      "description": "A woman with a natural makeup look.",
+      "imageUrl": "https://images.unsplash.com/photo-1696710869375-0ef8272dfc97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuYXR1cmFsJTIwbWFrZXVwfGVufDB8fHx8MTc1OTQxMzgzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "natural makeup"
+    },
+    {
+      "id": "look_smokey",
+      "description": "A woman with a smokey eye makeup look.",
+      "imageUrl": "https://images.unsplash.com/photo-1722354142475-5b90b0ff9839?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzbW9rZXklMjBleWV8ZW58MHx8fHwxNzU5NDEzODM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smokey eye"
+    },
+    {
+      "id": "look_bridal",
+      "description": "A woman with an elegant bridal makeup look.",
+      "imageUrl": "https://images.unsplash.com/photo-1684868682581-4cac3af5b8d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxicmlkYWwlMjBtYWtldXB8ZW58MHx8fHwxNzU5NDY1MzI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bridal makeup"
+    },
+    {
+      "id": "look_glam",
+      "description": "A woman with a full glam makeup look.",
+      "imageUrl": "https://images.unsplash.com/photo-1631120581590-a699a481fc98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbGFtJTIwbWFrZXVwfGVufDB8fHx8MTc1OTQ2NTMyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "glam makeup"
+    },
+    {
+      "id": "testimonial1",
+      "description": "Portrait of a smiling customer.",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzU5NDU5NjcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "testimonial2",
+      "description": "Portrait of another happy customer.",
+      "imageUrl": "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1OTM5NjU1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial3",
+      "description": "Portrait of a satisfied client.",
+      "imageUrl": "https://images.unsplash.com/photo-1598601065215-751bf8798a2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYXBweSUyMHdvbWFufGVufDB8fHx8MTc1OTM5MDUxOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy woman"
+    },
+    {
+      "id": "user_portrait_placeholder",
+      "description": "A placeholder image for a user's portrait.",
+      "imageUrl": "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1OTM5NjU1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    }
+  ]
 }
