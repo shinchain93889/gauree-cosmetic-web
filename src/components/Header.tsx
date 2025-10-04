@@ -12,7 +12,6 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/products', label: 'Products' },
   { href: '/services', label: 'Services' },
-  { href: '/virtual-try-on', label: 'Virtual Try-On' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -37,15 +36,15 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="pr-0">
-                <div className="flex justify-between items-center px-6 pb-2">
-                    <Logo />
-                    <SheetClose asChild>
-                         <Button variant="ghost" size="icon">
-                            <X className="h-6 w-6" />
-                            <span className="sr-only">Close menu</span>
-                        </Button>
-                    </SheetClose>
-                </div>
+              <div className="flex justify-between items-center px-6 pb-2">
+                <Logo />
+                <SheetClose asChild>
+                  <Button variant="ghost" size="icon">
+                    <X className="h-6 w-6" />
+                    <span className="sr-only">Close menu</span>
+                  </Button>
+                </SheetClose>
+              </div>
               <nav className="flex flex-col gap-6 p-6">
                 {navLinks.map(({ href, label }) => (
                   <SheetClose asChild key={href}>
@@ -67,9 +66,9 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <div className="flex flex-1 items-center justify-between">
-           <div className="md:hidden">
-                <Logo />
-           </div>
+          <div className="md:hidden">
+            <Logo />
+          </div>
           <nav className="hidden items-center gap-6 text-sm md:flex">
             {navLinks.map(({ href, label }) => (
               <Link

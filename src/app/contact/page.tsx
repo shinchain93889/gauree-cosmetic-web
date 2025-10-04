@@ -19,7 +19,7 @@ export default function ContactPage() {
         {/* Contact Form */}
         <Card>
           <CardHeader>
-            <CardTitle className="font-headline text-2xl">Send us a Message</CardTitle>
+            <CardTitle className="font-headline text-2xl">Send us a Message for any Inquiries</CardTitle>
           </CardHeader>
           <CardContent>
             <form className="space-y-4">
