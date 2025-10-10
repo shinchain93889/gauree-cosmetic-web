@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import Logo from './Logo';
+import { useCart } from '@/hooks/use-cart';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -18,6 +19,7 @@ const navLinks = [
 
 export default function Header() {
   const pathname = usePathname();
+  const { count } = useCart();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -91,10 +93,15 @@ export default function Header() {
                 <span className="sr-only">Account</span>
               </Link>
             </Button>
-            <Button variant="ghost" size="icon" asChild>
+            <Button variant="ghost" size="icon" asChild className="relative">
               <Link href="/cart">
                 <ShoppingBag className="h-5 w-5" />
                 <span className="sr-only">Shopping Cart</span>
+                {count > 0 && (
+                  <span className="absolute -top-1 -right-1 h-5 min-w-5 px-1 rounded-full bg-primary text-primary-foreground text-[10px] font-bold flex items-center justify-center">
+                    {count}
+                  </span>
+                )}
               </Link>
             </Button>
           </div>

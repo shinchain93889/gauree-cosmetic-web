@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Star, Paintbrush, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import AddToCartButton from '@/components/AddToCartButton';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
@@ -81,7 +82,7 @@ export default function Home() {
                           </CardContent>
                           <CardFooter className="p-6 pt-0 flex justify-between items-center">
                             <span className="text-lg font-bold text-primary">${product.price.toFixed(2)}</span>
-                            <Button variant="outline">Add to Cart</Button>
+                            <AddToCartButton product={product} />
                           </CardFooter>
                         </Card>
                       </div>
