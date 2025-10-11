@@ -32,11 +32,14 @@ export type Testimonial = {
 };
 
 export const products: Product[] = [
-  { id: 'prod1', name: 'Velvet Kiss Lipstick', category: 'Lips', price: 24.00, description: 'A rich, creamy lipstick that provides a bold, long-lasting color.', imageId: 'product1' },
-  { id: 'prod2', name: 'Celestial Glow Eyeshadow', category: 'Eyes', price: 45.00, description: 'A palette of 12 vibrant, blendable eyeshadows for any occasion.', imageId: 'product2' },
-  { id: 'prod3', name: 'Second Skin Foundation', category: 'Face', price: 38.00, description: 'A lightweight, full-coverage foundation with a natural, satin finish.', imageId: 'product3' },
-  { id: 'prod4', name: 'Sunbeam Highlighter', category: 'Face', price: 30.00, description: 'A powder highlighter that gives a radiant, lit-from-within glow.', imageId: 'product4' },
-  { id: 'prod5', name: 'Sky High Mascara', category: 'Eyes', price: 22.00, description: 'Volumizing and lengthening mascara for dramatic lashes.', imageId: 'product5' },
+  { id: 'prod1', name: 'Velvet Kiss Lipstick', category: 'Lips', price: 24.0, description: 'A rich, creamy lipstick that provides a bold, long-lasting color.', imageId: 'product1' },
+  { id: 'prod2', name: 'Celestial Glow Eyeshadow', category: 'Eyes', price: 45.0, description: 'A palette of 12 vibrant, blendable eyeshadows for any occasion.', imageId: 'product2' },
+  { id: 'prod3', name: 'Second Skin Foundation', category: 'Face', price: 38.0, description: 'A lightweight, full-coverage foundation with a natural, satin finish.', imageId: 'product3' },
+  { id: 'prod4', name: 'Sunbeam Highlighter', category: 'Face', price: 30.0, description: 'A powder highlighter that gives a radiant, lit-from-within glow.', imageId: 'product4' },
+  { id: 'prod5', name: 'Sky High Mascara', category: 'Eyes', price: 22.0, description: 'Volumizing and lengthening mascara for dramatic lashes.', imageId: 'product5' },
+  { id: 'prod6', name: 'Nail Enamel - Blush', category: 'Nails', price: 12.0, description: 'High-shine, long-lasting nail enamel in a soft blush tone.', imageId: 'product6' },
+  { id: 'prod7', name: 'Matte Liquid Lipstick - Rose', category: 'Lips', price: 26.0, description: 'Long-wear matte liquid lipstick with comfortable, non-drying formula.', imageId: 'product7' },
+  { id: 'prod8', name: 'Nail Strengthener Serum', category: 'Nails', price: 18.0, description: 'A fortifying serum to strengthen and protect nails.', imageId: 'product8' },
 ];
 
 export const services: Service[] = [
