@@ -1,3 +1,5 @@
+'use client';
+
 import { Card, CardContent } from "@/components/ui/card";
 import { products } from "@/lib/data";
 import { useMemo, useState } from "react";
@@ -75,7 +77,7 @@ export default function ProductsPage() {
                     <h3 className="font-headline text-lg">{product.name}</h3>
                     <p className="text-sm text-muted-foreground">{product.category}</p>
                     <div className="mt-4 flex justify-between items-center">
-                      <span className="text-lg font-bold text-primary">${product.price.toFixed(2)}</span>
+                      <span className="text-lg font-bold text-primary">₹{product.price.toLocaleString('en-IN')}</span>
                       <AddToCartButton product={product} size="sm" />
                     </div>
                   </div>

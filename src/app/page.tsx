@@ -66,14 +66,14 @@ export default function Home() {
                         <Card className="h-full flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                           <CardHeader className="p-0">
                             {productImage && (
-                                <Image
-                                  src={productImage.imageUrl}
-                                  alt={product.name}
-                                  width={400}
-                                  height={400}
-                                  className="w-full h-64 object-cover"
-                                  data-ai-hint={productImage.imageHint}
-                                />
+                              <Image
+                                src={productImage.imageUrl}
+                                alt={product.name}
+                                width={400}
+                                height={400}
+                                className="w-full h-64 object-cover"
+                                data-ai-hint={productImage.imageHint}
+                              />
                             )}
                           </CardHeader>
                           <CardContent className="flex-1 p-6">
@@ -81,7 +81,7 @@ export default function Home() {
                             <p className="text-muted-foreground mt-2">{product.category}</p>
                           </CardContent>
                           <CardFooter className="p-6 pt-0 flex justify-between items-center">
-                            <span className="text-lg font-bold text-primary">${product.price.toFixed(2)}</span>
+                            <span className="text-lg font-bold text-primary">₹{product.price.toLocaleString('en-IN')}</span>
                             <AddToCartButton product={product} />
                           </CardFooter>
                         </Card>
@@ -91,18 +91,18 @@ export default function Home() {
                 })}
               </CarouselContent>
               <CarouselPrevious className="ml-12" />
-              <CarouselNext className="mr-12"/>
+              <CarouselNext className="mr-12" />
             </Carousel>
-             <div className="text-center mt-12">
-                <Button asChild size="lg" variant="link" className="text-lg">
-                    <Link href="/products">
-                        View All Products <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
-                </Button>
+            <div className="text-center mt-12">
+              <Button asChild size="lg" variant="link" className="text-lg">
+                <Link href="/products">
+                  View All Products <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
             </div>
           </div>
         </section>
-        
+
         {/* Services Section */}
         <section id="services" className="py-16 lg:py-24 bg-card">
           <div className="container mx-auto px-4">
@@ -112,19 +112,19 @@ export default function Home() {
                 const serviceImage = PlaceHolderImages.find(p => p.id === service.imageId);
                 return (
                   <Card key={index} className="overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                     {serviceImage && (
-                        <Image
-                          src={serviceImage.imageUrl}
-                          alt={service.name}
-                          width={400}
-                          height={250}
-                          className="w-full h-48 object-cover"
-                          data-ai-hint={serviceImage.imageHint}
-                        />
-                     )}
+                    {serviceImage && (
+                      <Image
+                        src={serviceImage.imageUrl}
+                        alt={service.name}
+                        width={400}
+                        height={250}
+                        className="w-full h-48 object-cover"
+                        data-ai-hint={serviceImage.imageHint}
+                      />
+                    )}
                     <CardHeader>
                       <CardTitle className="font-headline text-2xl">{service.name}</CardTitle>
-                      <CardDescription>{service.duration} &bull; ${service.price}</CardDescription>
+                      <CardDescription>{service.duration} &bull; ₹{service.price.toLocaleString('en-IN')}</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">{service.description}</p>
@@ -159,7 +159,7 @@ export default function Home() {
               </div>
               <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl">
                 {userPortraitPlaceholder && (
-                  <Image 
+                  <Image
                     src={userPortraitPlaceholder.imageUrl}
                     alt="Virtual makeup try on example"
                     fill
@@ -168,9 +168,9 @@ export default function Home() {
                   />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent flex items-center justify-center">
-                   <div className="bg-white/20 backdrop-blur-md p-4 rounded-lg">
-                      <Sparkles className="w-16 h-16 text-white" />
-                   </div>
+                  <div className="bg-white/20 backdrop-blur-md p-4 rounded-lg">
+                    <Sparkles className="w-16 h-16 text-white" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -196,10 +196,10 @@ export default function Home() {
                     </CardContent>
                     <CardFooter className="flex items-center gap-4">
                       {testimonialImage && (
-                         <Avatar>
-                            <AvatarImage src={testimonialImage.imageUrl} alt={testimonial.name} data-ai-hint={testimonialImage.imageHint} />
-                            <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                          </Avatar>
+                        <Avatar>
+                          <AvatarImage src={testimonialImage.imageUrl} alt={testimonial.name} data-ai-hint={testimonialImage.imageHint} />
+                          <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                        </Avatar>
                       )}
                       <div>
                         <p className="font-semibold">{testimonial.name}</p>

@@ -16,49 +16,49 @@ export default function ServicesPage() {
       </p>
       <div className="grid lg:grid-cols-3 gap-12">
         <div className="lg:col-span-2 grid md:grid-cols-2 gap-8">
-            {services.map((service) => {
-              const serviceImage = PlaceHolderImages.find(p => p.id === service.imageId);
-              return (
-                <Card key={service.id} className="flex flex-col">
-                  {serviceImage && (
-                    <Image
-                      src={serviceImage.imageUrl}
-                      alt={service.name}
-                      width={400}
-                      height={250}
-                      className="w-full h-48 object-cover"
-                      data-ai-hint={serviceImage.imageHint}
-                    />
-                  )}
-                  <CardHeader>
-                    <CardTitle className="font-headline text-2xl">{service.name}</CardTitle>
-                    <CardDescription>{service.duration} &bull; ${service.price}</CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    <p>{service.description}</p>
-                  </CardContent>
-                  <CardFooter>
-                    <Button className="w-full">Select Service</Button>
-                  </CardFooter>
-                </Card>
-              )
-            })}
-        </div>
-        <div className="lg:col-span-1">
-            <Card>
+          {services.map((service) => {
+            const serviceImage = PlaceHolderImages.find(p => p.id === service.imageId);
+            return (
+              <Card key={service.id} className="flex flex-col">
+                {serviceImage && (
+                  <Image
+                    src={serviceImage.imageUrl}
+                    alt={service.name}
+                    width={400}
+                    height={250}
+                    className="w-full h-48 object-cover"
+                    data-ai-hint={serviceImage.imageHint}
+                  />
+                )}
                 <CardHeader>
-                    <CardTitle className="font-headline">Select a Date</CardTitle>
+                  <CardTitle className="font-headline text-2xl">{service.name}</CardTitle>
+                  <CardDescription>{service.duration} &bull; ₹{service.price.toLocaleString('en-IN')}</CardDescription>
                 </CardHeader>
-                <CardContent className="flex justify-center">
-                    <Calendar
-                        mode="single"
-                        className="p-0"
-                    />
+                <CardContent className="flex-grow">
+                  <p>{service.description}</p>
                 </CardContent>
                 <CardFooter>
-                    <Button className="w-full" disabled>Book Appointment</Button>
+                  <Button className="w-full">Select Service</Button>
                 </CardFooter>
-            </Card>
+              </Card>
+            )
+          })}
+        </div>
+        <div className="lg:col-span-1">
+          <Card>
+            <CardHeader>
+              <CardTitle className="font-headline">Select a Date</CardTitle>
+            </CardHeader>
+            <CardContent className="flex justify-center">
+              <Calendar
+                mode="single"
+                className="p-0"
+              />
+            </CardContent>
+            <CardFooter>
+              <Button className="w-full" disabled>Book Appointment</Button>
+            </CardFooter>
+          </Card>
         </div>
       </div>
     </div>

@@ -62,7 +62,7 @@ export default function CartPage() {
                     )}
                     <div className="flex-1">
                       <p className="font-medium">{item.name}</p>
-                      <p className="text-sm text-muted-foreground">${item.price.toFixed(2)}</p>
+                      <p className="text-sm text-muted-foreground">₹{item.price.toLocaleString('en-IN')}</p>
                     </div>
                     <div className="flex items-center gap-2">
                       <Input
@@ -78,7 +78,7 @@ export default function CartPage() {
                       </Button>
                     </div>
                     <div className="w-24 text-right font-medium">
-                      ${(item.price * item.quantity).toFixed(2)}
+                      ₹{(item.price * item.quantity).toLocaleString('en-IN')}
                     </div>
                   </div>
                 );
@@ -145,7 +145,7 @@ export default function CartPage() {
                           "gauree_checkout_details",
                           JSON.stringify({ name, phone, address })
                         );
-                      } catch {}
+                      } catch { }
                       setOpen(false);
                       // Navigate to /checkout
                       window.location.href = "/checkout";
