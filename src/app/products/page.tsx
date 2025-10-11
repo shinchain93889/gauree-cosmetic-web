@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import AddToCartButton from "@/components/AddToCartButton";
 import Link from "next/link";
 
 export default function ProductsPage() {
@@ -75,7 +76,7 @@ export default function ProductsPage() {
                     <p className="text-sm text-muted-foreground">{product.category}</p>
                     <div className="mt-4 flex justify-between items-center">
                       <span className="text-lg font-bold text-primary">${product.price.toFixed(2)}</span>
-                      <Button variant="outline" size="sm">Add to Cart</Button>
+                      <AddToCartButton product={product} size="sm" />
                     </div>
                   </div>
                 </CardContent>
