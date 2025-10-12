@@ -63,23 +63,25 @@ export default function ProductsPage() {
                 className="overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
               >
                 <CardContent className="p-0">
-                  {productImage && (
-                    <Image
-                      src={productImage.imageUrl}
-                      alt={product.name}
-                      width={400}
-                      height={400}
-                      className="w-full h-64 object-cover"
-                      data-ai-hint={productImage.imageHint}
-                    />
-                  )}
-                  <div className="p-4">
-                    <h3 className="font-headline text-lg">{product.name}</h3>
-                    <p className="text-sm text-muted-foreground">{product.category}</p>
-                    <div className="mt-4 flex justify-between items-center">
-                      <span className="text-lg font-bold text-primary">₹{product.price.toLocaleString('en-IN')}</span>
-                      <AddToCartButton product={product} size="sm" />
+                  <Link href={`/products/${product.id}`} className="block">
+                    {productImage && (
+                      <Image
+                        src={productImage.imageUrl}
+                        alt={product.name}
+                        width={400}
+                        height={400}
+                        className="w-full h-64 object-cover"
+                        data-ai-hint={productImage.imageHint}
+                      />
+                    )}
+                    <div className="p-4">
+                      <h3 className="font-headline text-lg hover:text-primary transition-colors">{product.name}</h3>
+                      <p className="text-sm text-muted-foreground">{product.category}</p>
                     </div>
+                  </Link>
+                  <div className="px-4 pb-4 pt-0 flex justify-between items-center">
+                    <span className="text-lg font-bold text-primary">₹{product.price.toLocaleString('en-IN')}</span>
+                    <AddToCartButton product={product} size="sm" />
                   </div>
                 </CardContent>
               </Card>

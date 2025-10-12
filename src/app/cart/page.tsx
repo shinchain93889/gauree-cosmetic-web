@@ -98,7 +98,7 @@ export default function CartPage() {
           <CardContent className="space-y-2">
             <div className="flex justify-between">
               <span>Subtotal</span>
-              <span className="font-semibold">${total.toFixed(2)}</span>
+              <span className="font-semibold">₹{total.toLocaleString('en-IN')}</span>
             </div>
             <div className="flex justify-between text-muted-foreground">
               <span>Shipping</span>
@@ -107,7 +107,7 @@ export default function CartPage() {
             <Separator />
             <div className="flex justify-between text-lg">
               <span>Total</span>
-              <span className="font-bold">${total.toFixed(2)}</span>
+              <span className="font-bold">₹{total.toLocaleString('en-IN')}</span>
             </div>
           </CardContent>
           <CardFooter className="flex flex-col gap-3">
