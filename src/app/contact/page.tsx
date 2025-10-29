@@ -116,6 +116,31 @@ export default function ContactPage() {
           </Card>
         </div>
       </div>
+      <div className="border-t border-muted py-8">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="font-headline text-2xl mb-4">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-semibold">What services do you offer?</h3>
+              <p className="text-muted-foreground">
+                We offer a wide range of services including web design, development, and digital marketing.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold">How can I get a quote?</h3>
+              <p className="text-muted-foreground">
+                You can get a quote by contacting us through the form above or by emailing us directly.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold">What is your pricing model?</h3>
+              <p className="text-muted-foreground">
+                Our pricing model is project-based. We provide a detailed quote after discussing your requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
